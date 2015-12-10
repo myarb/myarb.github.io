@@ -1,0 +1,55 @@
+/*************************
+NAVIGATION
+*************************/
+
+
+
+nav {
+	text-align: left;
+	padding: 1em 2em;
+	margin: 1em 0 0 0;
+	font-size: 1.2em;
+	width: 20%;
+}
+
+nav ul {
+	list-style: none;
+	margin: 0 10px;
+	padding: 0;
+}
+
+
+/* nav link styling */
+nav a {
+	color: #000;
+	display: block;
+	min-height: 20px;
+	background-size: 5px;
+	padding: 0 0 0 30px;
+	margin: 0 0 5px;
+	text-decoration: none;
+}
+
+/* nav list item  */
+nav li {
+	margin: 5px;
+	display: block;
+	text-decoration: none;
+}
+
+#staticHead {
+	float: right;
+    margin: 0;
+
+}
+
+/*************************
+LOGO
+*************************/
+
+header img {
+	max-width: 200px;
+	padding: 5px;
+	border: 2px solid black;
+}
+

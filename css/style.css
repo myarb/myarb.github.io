@@ -1,0 +1,524 @@
+/*
+
+Domain: http://www.rubenstom.nl/jordanmike/
+Author: Ruben Stom
+Description: Jordan Mike is a clean website theme.
+Version: 1.2
+
+/* -------------------------------------------------------------- 
+/* =Basis
+-------------------------------------------------------------- */
+
+*, *:after, *:before { 	
+	-webkit-box-sizing: border-box; 
+	-moz-box-sizing: border-box; 
+	box-sizing: border-box; 
+}
+
+* { 
+	margin:0; 
+	padding:0;
+}
+
+body, html { 
+	font-size: 100%; 
+	padding: 0; 
+	margin: 0; 
+	height: 100%;
+}
+
+body {
+ 	background: #fff;
+ 	font-family: 'Roboto', sans-serif;
+}
+
+#page {
+ 	z-index: 10;
+	position: relative;
+	opacity: 0;
+	margin-top: 20px;
+	background: #fff;
+	transition:all 1s ease 1s;
+	-webkit-transition:all 1s ease 1s;
+	-moz-transition:all 1s ease 1s;
+	-o-transition:all 1s ease 1s;
+}
+
+#page.displayed {
+	opacity: 1;
+	margin: 0;
+}
+
+hr {
+    height: 1px;
+    background-color: #e9e9e9;
+    border: 0px;
+}
+
+/* -------------------------------------------------------------- 
+/* =TYPOGRAPHY
+-------------------------------------------------------------- */
+
+p {
+	color: #666666;
+	margin-bottom: 34px;
+	font-size: 13px;
+	line-height: 26px;
+	font-weight: 300;
+	letter-spacing: 0.6px;
+}
+
+a {
+	outline: none;
+	text-decoration: none;
+	color: #ccc;
+	transition: 500ms ease;
+	-moz-transition: 500ms ease;
+	-webkit-transition: 500ms ease;
+	-ms-transition: 500ms ease;
+	-o-transition: 500ms ease;
+	border-bottom: 1px solid #ccc;
+	padding-bottom: 4px;
+}
+
+a:hover {
+	opacity: 0.5;
+}
+
+/* -------------------------------------------------------------- 
+/* =Header
+-------------------------------------------------------------- */
+
+header {
+	width: 100%;
+	height: 140px;
+	line-height: 30px;
+	padding: 0 80px;
+	z-index: 100;
+	top: 0;
+}
+
+#nav {
+	float: right;
+}
+
+#nav ul li {
+    float: left;
+    list-style: none;
+}
+
+#nav ul li a {
+    display: block;
+    margin-left: 40px;
+    margin-top: 50px;
+    color: #666;
+    font-size: 11px;
+    font-weight: 300;
+    letter-spacing: 2px;
+    color: #000;
+    text-transform: uppercase;
+    border-bottom: 0px;
+	padding-bottom: 0px;
+}
+
+header .logo {
+	height: 125px;
+	margin-top: 10px;
+	float: left;
+	position: absolute;
+	transition: 500ms ease;
+	-moz-transition: 500ms ease;
+	-webkit-transition: 500ms ease;
+	-ms-transition: 500ms ease;
+	-o-transition: 500ms ease;
+}
+
+header img:hover {
+	opacity: 0.7;
+}
+
+header .instagram-header-icon {
+	height: 15px;
+	margin-top: 8px;
+}
+
+#nav ul li .selected {
+    border-bottom: 1px solid #bbbbbb;
+}
+
+/* -------------------------------------------------------------- 
+/* =Hero Image
+-------------------------------------------------------------- */
+
+.hero-image-home {
+	width: 100%;
+	height: 500px;
+    background-color: #f3f3f3;
+	background-image: url('../img/DeathtoStock_Meticulous-09.jpg');
+	background-position: top;
+	background-size: cover;
+	overflow: hidden;
+}
+
+.hero-image-menu {
+    width: 100%;
+    height: 350px;
+    background-color: #f3f3f3;
+    background-image: url('../img/DeathtoStock_Creative Community8.jpg');
+    background-position: top;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.hero-image-gallery {
+    width: 100%;
+    height: 350px;
+    background-color: #f3f3f3;
+    background-image: url('../img/DeathtoStock_Creative Community3.jpg');
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.hero-image-contact {
+    width: 100%;
+    height: 350px;
+    background-color: #f3f3f3;
+    background-image: url('../img/DeathtoStock_Creative Community5.jpg');
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+}
+
+/* -------------------------------------------------------------- 
+/* =Main
+-------------------------------------------------------------- */
+
+.main {
+	width: 660px;
+	margin: 120px auto;
+	text-align: justify;
+}
+
+/* -------------------------------------------------------------- 
+/* =Menu Table
+-------------------------------------------------------------- */
+
+th, td {
+    padding: 4px 20px 0 25px;
+    height: 45px;
+    text-align: left;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 13px;
+    line-height: 26px;
+    font-weight: 300;
+    letter-spacing: 0.6px;
+    color: #666666;
+}
+
+th {
+    color: #666;
+    height: 45px;
+    font-size: 13px;
+    line-height: 26px;
+    font-weight: 300;
+    letter-spacing: 0.6px;
+}
+
+td:nth-of-type(even) {
+    text-align: right;
+    padding: 0 25px 0 20px;
+    min-width: 90px;
+}
+
+/* -------------------------------------------------------------- 
+/* =Gallery
+-------------------------------------------------------------- */
+
+.example-image {
+  width: 150px;
+  height: 150px;
+}
+
+.example-image-link {
+  width: 150px;
+  height: 150px;
+  margin: 0;
+  display: inline-block;
+  margin-bottom: 20px;
+  margin-right: 20px;
+}
+
+.example-image-link:nth-of-type(4n+0) {
+   margin-right: 0px;
+}
+
+/* -------------------------------------------------------------- 
+/* =Contact Form
+-------------------------------------------------------------- */
+
+form input, 
+form textarea {
+    font-family: 'Roboto', sans-serif;
+    width: 100%;
+    border: 1px solid #c7c7c7;
+    height: 35px;
+    margin-bottom: 20px;
+    padding-left: 14px;
+    font-size: 12px;
+    border-radius: 1px;
+  	font-weight: 300;
+  	letter-spacing: 0.6px;
+    transition: 500ms ease;
+    -moz-transition: 500ms ease;
+    -webkit-transition: 500ms ease;
+    -ms-transition: 500ms ease;
+    -o-transition: 500ms ease;
+}
+
+form input:active,
+form textarea:active,
+form input:focus,
+form textarea:focus {
+    border: 1px solid #343638;
+    outline: none;
+    transition: 500ms ease;
+    -moz-transition: 500ms ease;
+    -webkit-transition: 500ms ease;
+    -ms-transition: 500ms ease;
+    -o-transition: 500ms ease;
+}
+
+form textarea {
+    height: 100px;
+    padding: 10px 0 0 14px;
+    transition: 500ms ease;
+    -moz-transition: 500ms ease;
+    -webkit-transition: 500ms ease;
+    -ms-transition: 500ms ease;
+    -o-transition: 500ms ease;
+    -webkit-appearance: none;
+    -webkit-border-radius:0; 
+    border-radius:0;
+}
+
+form textarea:focus {
+ 	height: 200px;
+ 	transition: 500ms ease;
+    -moz-transition: 500ms ease;
+    -webkit-transition: 500ms ease;
+    -ms-transition: 500ms ease;
+    -o-transition: 500ms ease;
+}
+
+form input:last-of-type {
+    color: #fff;
+    display: block;
+    width: 160px;
+    border: 1px solid #343638;
+    padding-left: 0;
+    background-color: #343638;
+    height: 40px;
+    line-height: 36px;
+    transition: 500ms ease;
+    -moz-transition: 500ms ease;
+    -webkit-transition: 500ms ease;
+    -ms-transition: 500ms ease;
+    -o-transition: 500ms ease;
+}
+
+form input:last-of-type:hover, 
+form input:last-of-type:focus, 
+form input:last-of-type:active {
+    background-color: #fff;
+    color: #000;
+    border: 1px solid #343638;
+    cursor: pointer;
+    transition: 500ms ease;
+    -moz-transition: 500ms ease;
+    -webkit-transition: 500ms ease;
+    -ms-transition: 500ms ease;
+    -o-transition: 500ms ease;
+}
+
+input {
+ 	-webkit-appearance: none;
+    -webkit-border-radius:0; 
+    border-radius:0;
+}
+
+/* -------------------------------------------------------------- 
+/* =Footer
+-------------------------------------------------------------- */
+
+footer {
+	text-align: center;
+	background-color: #f3f3f3;
+	height: 80px;
+}
+
+footer p {
+	font-size: 13px;
+	color: #aaa;
+	letter-spacing: 0;
+	line-height: 80px;
+	margin-bottom: 0;
+}
+
+/* -------------------------------------------------------------- 
+/* =Responsive / Screen under 600px
+-------------------------------------------------------------- */
+
+@media screen and (max-width: 720px) {
+
+/* -------------------------------------------------------------- 
+/* =Header Responsive
+-------------------------------------------------------------- */
+
+header {
+    padding-left: 30px;
+}
+
+#nav {
+	width: 100%;
+    top: 132px;
+    position: absolute;
+    right: 0;
+}
+
+#nav:before {
+    font-family: sans-serif;
+    font-style: normal;
+    content: '\2630';
+    display: block;
+    position: absolute;
+    right: 30px;
+    top: -82px;
+    line-height: 27px;
+    font-size: 20px;
+    color: #323232;
+    cursor: pointer;
+}
+
+#nav ul {
+    background-color: #343638;
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+#nav ul li {
+    float: none;
+}
+
+#nav ul li a {
+    line-height: 60px;
+    margin: 0;
+    color: #fff;
+    z-index: 10;
+    height: 60px;
+    transition: 500ms ease;
+    -moz-transition: 500ms ease;
+    -webkit-transition: 500ms ease;
+    -ms-transition: 500ms ease;
+    -o-transition: 500ms ease;
+}
+
+#nav ul li a:last-of-type {
+
+}
+
+#nav ul li a:hover {
+    background-color: #fff;
+    color: #000;
+    text-decoration: none;
+    opacity: 1;
+}
+
+#nav ul {
+    display: block;
+    height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: 500ms ease-in-out;
+    -moz-transition: 500ms ease-in-out;
+    -webkit-transition: 500ms ease-in-out;
+    -ms-transition: 500ms ease-in-out;
+    -o-transition: 500ms ease-in-out;
+
+    transform: perspective(0) rotate3d(0, 0, 0, 0);
+    -moz-transform: perspective(0) rotate3d(1, 0, 0, -90deg);
+    -ms-transform: perspective(0) rotate3d(0, 0, 0, 0);
+    -o-transform: perspective(0) rotate3d(0, 0, 0, 0);
+    -webkit-transform: perspective(0) rotate3d(1, 0, 0, -90deg);
+
+    transform-origin: 100% 0%;
+    -moz-transform-origin: 100% 0%;
+    -webkit-transform-origin: 100% 0%;
+    -ms-transform-origin: 100% 0%;
+    -o-transform-origin: 100% 0%;
+}
+
+#nav.open ul {
+    height: auto;
+    opacity: 1;
+    transform: translateY(8px);
+    -ms-transform: translateY(8px);
+    -o-transform: translateY(8px);
+    -moz-transform: translateY(8px);
+    -webkit-transform: translateY(8px);
+}
+
+#nav ul li .selected {
+    border-bottom: 0px;
+}
+
+/* -------------------------------------------------------------- 
+/* =Hero Image Responsive
+-------------------------------------------------------------- */
+
+.hero-image-home,
+.hero-image-menu,
+.hero-image-gallery,
+.hero-image-contact {
+	height: 300px;
+}
+
+/* -------------------------------------------------------------- 
+/* =Main Responsive
+-------------------------------------------------------------- */
+
+.main {
+	padding: 0 30px; 
+	width: auto;
+}
+
+/* -------------------------------------------------------------- 
+/* =Gallery
+-------------------------------------------------------------- */
+
+.example-image {
+    width: 100%;
+    height: auto;
+}
+
+.example-image-link,
+.example-image-link:nth-of-type(4n+0) {
+    width: 48%;
+    height: auto;
+    margin-bottom: 20px;
+    margin-right: 4%;
+    border-bottom: 0;
+    padding-bottom: 0;
+}
+
+.example-image-link:nth-of-type(even) {
+    margin-right: 0px;
+}
+
+}
+

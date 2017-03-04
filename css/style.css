@@ -247,7 +247,7 @@ td:nth-of-type(even) {
 .example-image-link {
   width: 150px;
   height: 150px;
-  margin: 0;
+  margin: 20px;
   display: inline-block;
   margin-bottom: 20px;
   margin-right: 20px;

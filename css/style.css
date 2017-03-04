@@ -122,8 +122,8 @@ header {
 }
 
 header .logo {
-	height: 125px;
-	margin-top: 10px;
+	height: 90px;
+	margin-top: 25px;
 	float: left;
 	position: absolute;
 	transition: 500ms ease;
@@ -154,7 +154,7 @@ header .instagram-header-icon {
 	width: 100%;
 	height: 500px;
     background-color: #f3f3f3;
-	background-image: url('../img/DeathtoStock_Meticulous-09.jpg');
+	background-image: url('../img/hero-image-home.jpg');
 	background-position: top;
 	background-size: cover;
 	overflow: hidden;
@@ -164,8 +164,8 @@ header .instagram-header-icon {
     width: 100%;
     height: 350px;
     background-color: #f3f3f3;
-    background-image: url('../img/DeathtoStock_Creative Community8.jpg');
-    background-position: top;
+    background-image: url('../img/hero-image-menu.jpg');
+    background-position: center;
     background-size: cover;
     overflow: hidden;
 }
@@ -174,8 +174,8 @@ header .instagram-header-icon {
     width: 100%;
     height: 350px;
     background-color: #f3f3f3;
-    background-image: url('../img/DeathtoStock_Creative Community3.jpg');
-    background-position: center;
+    background-image: url('../img/hero-image-gallery.jpg');
+    background-position: top;
     background-size: cover;
     overflow: hidden;
 }
@@ -184,8 +184,8 @@ header .instagram-header-icon {
     width: 100%;
     height: 350px;
     background-color: #f3f3f3;
-    background-image: url('../img/DeathtoStock_Creative Community5.jpg');
-    background-position: center;
+    background-image: url('../img/hero-image-contact.jpg');
+    background-position: bottom;
     background-size: cover;
     overflow: hidden;
 }
@@ -195,9 +195,14 @@ header .instagram-header-icon {
 -------------------------------------------------------------- */
 
 .main {
-	width: 660px;
-	margin: 120px auto;
+	width: 1000px;
+	margin: 100px auto;
 	text-align: justify;
+}
+
+.main p {
+    font-size: 1em;
+    margin-top: 15px;
 }
 
 /* -------------------------------------------------------------- 
@@ -240,20 +245,20 @@ td:nth-of-type(even) {
 -------------------------------------------------------------- */
 
 .example-image {
-  width: 150px;
-  height: 150px;
+  width: 313px;
+  height: 313px;
 }
 
 .example-image-link {
-  width: 150px;
-  height: 150px;
-  margin: 20px;
+  width: 313px;
+  height: 313px;
+  margin: 0;
   display: inline-block;
   margin-bottom: 20px;
   margin-right: 20px;
 }
 
-.example-image-link:nth-of-type(4n+0) {
+.example-image-link:nth-of-type(3n+0) {
    margin-right: 0px;
 }
 

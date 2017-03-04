@@ -4,17 +4,15 @@
 
 <head>
 
-		<title>Jordan Mike | Contact</title>
+		<title>Melanie Jane | Contact</title>
 
 	<!-- Meta Zone -->
 	<meta charset="utf-8">
-	<meta name="description" content="Jordan Mike, typical dutch plants." />
-	<meta name="keywords" content="Jordan Mike, typical dutch plants.">
+	<meta name="description" content="Melanie Yarbrough, designer and illustrator" />
+	<meta name="keywords" content="Melanie Yarbrough, designer and illustrator">
 	<meta name="robots" content="index, follow, all" />
-	<meta name="author" content="Jordan Mike">
-	<meta name="publisher" content="Jordan Mike">
-	<meta name="geo.placename" content="Amsterdam">
-	<meta name="geo.region" content="NL">
+	<meta name="author" content="Melanie Yarbrough">
+	<meta name="publisher" content="Melanie Yarbrough">
 	<meta name="google" content="notranslate" />
 
 	<!-- Viewport -->
@@ -47,7 +45,7 @@
 		        <li><a href="menu.html" title="Menu">Menu</a></li>
 		        <li><a href="gallery.html" title="Gallery">Gallery</a></li>
 		        <li><a class="selected" href="contact.html" title="Contact">Contact</a></li>
-		        <li><a href="https://www.instagram.com/" title="Instagram" target="_blank"/><img class="instagram-header-icon" src="img/instagram-header-icon.png" alt="Instagram Icon"></a></li>
+		        <li><a href="https://www.instagram.com/melaniejanestudio" title="Instagram" target="_blank"/><img class="instagram-header-icon" src="img/instagram-header-icon.png" alt="Instagram Icon"></a></li>
 		      </ul>
 		    </nav>
 		</div>
@@ -66,26 +64,23 @@
 
 			<form  action="" method="POST" enctype="multipart/form-data"> 
 
-			<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus Nulla consequat massa quis enim.</p>
-
-			<p>Lorem ipsum dolor sit amet <a href="tel:0629165924" title="Direct call">(0031)6-29165924</a> adipiscing elit. Aenean commodo ligula eget dolor. Aenean magnis dis parturient massa. Cum sociis natoque <a href="mailto:info@jordanmike.nl" title="Direct mail">info@jordanmike.nl</a> penatibus et magnis dis parturient montes, nascetur ridiculus mus Nulla consequat massa quis enim.</p>
+			<p>I am available for freelance work and collaborations. I'd love to hear from you!</p>
 
 			    <input type="hidden" name="action" value="submit"> 
-			    <input name="name" type="text" value="" size="30" placeholder="First- and lastname"/><br> 
-			    <input name="email" type="text" value="" size="30" placeholder="E-mail"/><br> 
-			    <input name="phone" type="text" value="" size="30" placeholder="Phone"/><br> 
+			    <input name="name" type="text" value="" size="30" placeholder="First and Last Name"/><br> 
+			    <input name="email" type="text" value="" size="30" placeholder="Email"/><br>
 			    <input name="subject" type="text" value="" size="30" placeholder="Subject"/><br> 
 			    <textarea name="message" rows="7" cols="30" placeholder="Message"></textarea><br> 
 			    <input type="submit" value="Send"/> 
 		    </form> 
 
+<!-- 
 			<?php 
 				    }  
 				else 
 				    { 
 				    $name=$_REQUEST['name'];
 				    $email=$_REQUEST['email'];
-				    $phone=$_REQUEST['phone'];
 				    $subject=$_REQUEST['subject'];
 				    $message=$_REQUEST['message']; 
 				    if (($name=="")||($email=="")||($phone=="")||($message=="")) 
@@ -95,24 +90,22 @@
 				    else{         
 				        $from="From: $name<$email>\r\nReturn-path: $email";  
 				        $subject="$subject"; 
-				        mail("info@jordanmike.nl", $subject, 
+				        mail("melaniejanestudio@gmail.com", $subject, 
 				"$message 
 
 				From: 	$name
-
-				Phonenumber: 	$phone
 
 				E-mail:		$email", $from);
 				        echo "<p>Lorem ipsum dolar</br>sit amet, consectetuer </p>"; 
 				        } 
 				    }   
-			?>
+			?> -->
 
 		</div>
 	</div>
 
 	<footer>
-		<p>&copy; 2016 Jordan Mike</p>
+		<p>&copy; 2017 Melanie Yarbrough</p>
 	</footer>
 
 </body>

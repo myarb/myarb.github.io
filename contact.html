@@ -64,14 +64,11 @@
 
 			<form  action="" method="POST" enctype="multipart/form-data"> 
 
-			<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus Nulla consequat massa quis enim.</p>
-
-			<p>Lorem ipsum dolor sit amet <a href="tel:0629165924" title="Direct call">(0031)6-29165924</a> adipiscing elit. Aenean commodo ligula eget dolor. Aenean magnis dis parturient massa. Cum sociis natoque <a href="mailto:melaniejanestudio@gmail.com" title="Direct mail">melaniejanestudio@gmail.com</a> penatibus et magnis dis parturient montes, nascetur ridiculus mus Nulla consequat massa quis enim.</p>
+			<p>I am available for freelance work and collaborations. I'd love to hear from you!</p>
 
 			    <input type="hidden" name="action" value="submit"> 
-			    <input name="name" type="text" value="" size="30" placeholder="First- and lastname"/><br> 
-			    <input name="email" type="text" value="" size="30" placeholder="E-mail"/><br> 
-			    <input name="phone" type="text" value="" size="30" placeholder="Phone"/><br> 
+			    <input name="name" type="text" value="" size="30" placeholder="First and Last Name"/><br> 
+			    <input name="email" type="text" value="" size="30" placeholder="Email"/><br>
 			    <input name="subject" type="text" value="" size="30" placeholder="Subject"/><br> 
 			    <textarea name="message" rows="7" cols="30" placeholder="Message"></textarea><br> 
 			    <input type="submit" value="Send"/> 
@@ -84,7 +81,6 @@
 				    { 
 				    $name=$_REQUEST['name'];
 				    $email=$_REQUEST['email'];
-				    $phone=$_REQUEST['phone'];
 				    $subject=$_REQUEST['subject'];
 				    $message=$_REQUEST['message']; 
 				    if (($name=="")||($email=="")||($phone=="")||($message=="")) 
@@ -94,12 +90,10 @@
 				    else{         
 				        $from="From: $name<$email>\r\nReturn-path: $email";  
 				        $subject="$subject"; 
-				        mail("info@jordanmike.nl", $subject, 
+				        mail("melaniejanestudio@gmail.com", $subject, 
 				"$message 
 
 				From: 	$name
-
-				Phonenumber: 	$phone
 
 				E-mail:		$email", $from);
 				        echo "<p>Lorem ipsum dolar</br>sit amet, consectetuer </p>"; 

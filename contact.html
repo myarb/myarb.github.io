@@ -1,56 +1,118 @@
-<!doctype html>
 
-<html lang="en">
+<!DOCTYPE html>
+<html>
+
 <head>
 
-  <meta charset="utf-8">
-  <title>Melanie Yarbrough</title>
-  <meta name="description" content="Melanie Yarbrough portfolio">
-  <meta name="keywords" content="portfolio, design, responsive design">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <meta name="author" content="Melanie Yarbrough">
-  <link rel="icon" type="image/png" href="img/icon.png" />
+		<title>Melanie Jane | Contact</title>
 
-<!--Style-->
+	<!-- Meta Zone -->
+	<meta charset="utf-8">
+	<meta name="description" content="Melanie Yarbrough, designer and illustrator" />
+	<meta name="keywords" content="Melanie Yarbrough, designer and illustrator">
+	<meta name="robots" content="index, follow, all" />
+	<meta name="author" content="Melanie Yarbrough">
+	<meta name="publisher" content="Melanie Yarbrough">
+	<meta name="google" content="notranslate" />
 
-  <link rel="stylesheet" href="css/reset.css">
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/style-responsive.css">
-  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-  
-  <!--[if lt IE 9]>
-  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-  <![endif]-->
-  
+	<!-- Viewport -->
+	<meta name="viewport" content="initial-scale=1, user-scalable=no">
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+	<meta name="apple-mobile-web-app-title" content="Jordan Mike">
+
+	<!-- Favicon -->
+	<link rel="shortcut icon" type="image/png" href="img/favicon.png"/>
+
+	<!-- CSS Stylesheets -->
+	<link rel="stylesheet" href="css/style.css">
+
+	<!-- Font -->
+	<link href='https://fonts.googleapis.com/css?family=Roboto:400,700,300' rel='stylesheet' type='text/css'>
+
+	<!-- Javascript -->
+	<script type="text/javascript" src="js/main.js"></script>
+
 </head>
+<body id="page">
 
-<body>
+	<header>
+		<div id="wrap">
+		  	<a href="index.html" title="Home"><img class="logo" src="img/logo.png" alt="Logo"/></a>
+		    <nav id="nav">
+		      <ul>
+		        <li><a href="index.html" title="Home">Home</a></li>
+		        <li><a href="menu.html" title="Menu">Menu</a></li>
+		        <li><a href="gallery.html" title="Gallery">Gallery</a></li>
+		        <li><a class="selected" href="contact.html" title="Contact">Contact</a></li>
+		        <li><a href="https://www.instagram.com/melaniejanestudio" title="Instagram" target="_blank"/><img class="instagram-header-icon" src="img/instagram-header-icon.png" alt="Instagram Icon"></a></li>
+		      </ul>
+		    </nav>
+		</div>
+	</header>
 
-  <!--Header-->
-  <header><img src="img/Pencil_Logo.svg"></header>
+	<div class="hero-image-contact">
+	</div>
 
-  <!--Navigation-->
-  <ul>
-    <a href="index.html"><li>Home</li></a>
-    <a href="illustrations.html"><li>Illustrations</li></a>
-    <a href="webdesign.html"><li>Web Design</li></a>
-    <a href="resume.html"><li>Resume</li></a>
-    <a href="blog.html"><li>Journal</li></a>
-  </ul>
+	<div class="main">
 
-  <!--Content-->
-    <div class="Wrapper-Contact">
-    <section class="primary">
-      <h3>General Information</h3>
-        <p>I am accepting freelance work with brands in publishing, design, food, fashion, or blogging.</p>
-    </section>
-    <section class="secondary">
-      <h3>Contact Details</h3>
-      <ul class="contact-info">
-        <li class="mail"><a href="mailto:yarbrough.melanie@gmail.com">yarbrough.melanie@gmail.com</a></li>
-        <li class="twitter"><a href="http://twitter.com/intent/tweet?screen_name=2percentmelk">@2percentmelk</a></li>
-      </ul>
-    </section>
-  </div>
+			<?php 
+				$action=$_REQUEST['action']; 
+				if ($action=="")
+				{ 
+			?> 
+
+			<form  action="" method="POST" enctype="multipart/form-data"> 
+
+			<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus Nulla consequat massa quis enim.</p>
+
+			<p>Lorem ipsum dolor sit amet <a href="tel:0629165924" title="Direct call">(0031)6-29165924</a> adipiscing elit. Aenean commodo ligula eget dolor. Aenean magnis dis parturient massa. Cum sociis natoque <a href="mailto:melaniejanestudio@gmail.com" title="Direct mail">melaniejanestudio@gmail.com</a> penatibus et magnis dis parturient montes, nascetur ridiculus mus Nulla consequat massa quis enim.</p>
+
+			    <input type="hidden" name="action" value="submit"> 
+			    <input name="name" type="text" value="" size="30" placeholder="First- and lastname"/><br> 
+			    <input name="email" type="text" value="" size="30" placeholder="E-mail"/><br> 
+			    <input name="phone" type="text" value="" size="30" placeholder="Phone"/><br> 
+			    <input name="subject" type="text" value="" size="30" placeholder="Subject"/><br> 
+			    <textarea name="message" rows="7" cols="30" placeholder="Message"></textarea><br> 
+			    <input type="submit" value="Send"/> 
+		    </form> 
+
+<!-- 
+			<?php 
+				    }  
+				else 
+				    { 
+				    $name=$_REQUEST['name'];
+				    $email=$_REQUEST['email'];
+				    $phone=$_REQUEST['phone'];
+				    $subject=$_REQUEST['subject'];
+				    $message=$_REQUEST['message']; 
+				    if (($name=="")||($email=="")||($phone=="")||($message=="")) 
+				        { 
+				        echo "<p>Lorem ipsum dolar</br>sit amet, consectetuer </p>"; 
+				        } 
+				    else{         
+				        $from="From: $name<$email>\r\nReturn-path: $email";  
+				        $subject="$subject"; 
+				        mail("info@jordanmike.nl", $subject, 
+				"$message 
+
+				From: 	$name
+
+				Phonenumber: 	$phone
+
+				E-mail:		$email", $from);
+				        echo "<p>Lorem ipsum dolar</br>sit amet, consectetuer </p>"; 
+				        } 
+				    }   
+			?> -->
+
+		</div>
+	</div>
+
+	<footer>
+		<p>&copy; 2017 Melanie Yarbrough</p>
+	</footer>
 
 </body>
+</html>
